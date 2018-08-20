@@ -197,6 +197,7 @@ SWIGRUNTIME JSObjectRef SWIG_JSC_NewPointerObj(JSContextRef context, void *ptr, 
 }
 
 #define SWIG_ConvertPtr(obj, ptr, info, flags)    SWIG_JSC_ConvertPtr(context, obj, ptr, info, flags)
+#define SWIG_ConvertPtrAndOwn(obj,pptr,type,flags, own)  SWIG_JSC_ConvertPtr(context, obj, pptr, type, flags, own)
 #define SWIG_NewPointerObj(ptr, info, flags)      SWIG_JSC_NewPointerObj(context, ptr, info, flags)
 
 #define SWIG_ConvertInstance(obj, pptr, type, flags)    SWIG_JSC_ConvertInstancePtr(context, obj, pptr, type, flags)
